@@ -53,7 +53,7 @@ struct Deck createDeck() {
 }
 
 
-void shuffleDeck(struct Deck* deck) {
+void shuffleDeck(struct Deck* deck) { //Fisher-Yates Algo
     srand(time(0));  
 
     for (int i = 51; i > 0; i--) {
