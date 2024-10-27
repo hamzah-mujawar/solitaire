@@ -1,2 +1,4 @@
 *.json
 *.mk
+solitaire
+*.ccls
