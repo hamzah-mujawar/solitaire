@@ -13,8 +13,8 @@
       "build/main.o",
       "src/main.c"
     ],
-    "directory": "/home/tailwind/Documents/Games/soltaire",
-    "file": "/home/tailwind/Documents/Games/soltaire/src/main.c",
-    "output": "/home/tailwind/Documents/Games/soltaire/build/main.o"
+    "directory": "/home/pickle/projects/solitaire",
+    "file": "/home/pickle/projects/solitaire/src/main.c",
+    "output": "/home/pickle/projects/solitaire/build/main.o"
   }
 ]
