@@ -2,6 +2,8 @@
 #include <time.h>
 #include <stdlib.h>
 
+#define DECKSIZE 52
+
 enum Card_Categories {
     clubs,
     diamonds,
@@ -31,15 +33,12 @@ struct Card {
 };
 
 struct Deck {
-    int deckSize;
-    struct Card cards[52];  // Array of cards
+    struct Card cards[DECKSIZE];  // Array of cards
 };
 
 
 struct Deck createDeck() {
     struct Deck deck;
-    deck.deckSize = 52;
-
     int index = 0;
     for (int suit = clubs; suit <= spades; suit++) {
         for (int rank = ace; rank <= king; rank++) {
@@ -56,7 +55,7 @@ struct Deck createDeck() {
 void shuffleDeck(struct Deck* deck) { //Fisher-Yates Algo
     srand(time(0));  
 
-    for (int i = 51; i > 0; i--) {
+    for (int i = DECKSIZE - 1; i > 0; i--) {
         int r = rand() % (i + 1); 
         struct Card temp = deck->cards[i];
         deck->cards[i] = deck->cards[r];
@@ -65,7 +64,7 @@ void shuffleDeck(struct Deck* deck) { //Fisher-Yates Algo
 }
 
 void printDeck(const struct Deck* deck) {
-    for (int i = 0; i < deck->deckSize; i++) {
+    for (int i = 0; i < DECKSIZE; i++) {
         printf("Card %d: Rank = %d, Suit = %d\n", i + 1, deck->cards[i].rank, deck->cards[i].suit);
     }
 }
