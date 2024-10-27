@@ -10,29 +10,11 @@
       "inc",
       "-c",
       "-o",
-      "build/ll.o",
-      "src/ll.c"
-    ],
-    "directory": "/home/tailwind/Documents/Games/solitaire",
-    "file": "/home/tailwind/Documents/Games/solitaire/src/ll.c",
-    "output": "/home/tailwind/Documents/Games/solitaire/build/ll.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-O0",
-      "-pipe",
-      "-g",
-      "-Wall",
-      "-I",
-      "inc",
-      "-c",
-      "-o",
       "build/main.o",
       "src/main.c"
     ],
-    "directory": "/home/tailwind/Documents/Games/solitaire",
-    "file": "/home/tailwind/Documents/Games/solitaire/src/main.c",
-    "output": "/home/tailwind/Documents/Games/solitaire/build/main.o"
+    "directory": "/home/tailwind/Documents/Games/soltaire",
+    "file": "/home/tailwind/Documents/Games/soltaire/src/main.c",
+    "output": "/home/tailwind/Documents/Games/soltaire/build/main.o"
   }
 ]

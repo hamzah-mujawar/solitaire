@@ -1,0 +1,3 @@
+clang
+%h:inc/*.h
+%c:src/*.c
