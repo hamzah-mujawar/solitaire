@@ -13,9 +13,8 @@ struct list{
 };
 typedef struct list list;
 
-static inline list_item** find_indirect(list* l, Deck* deck);
-void insert_before(list* l, list_item* before, Deck* deck);
+list_item* create_list(Deck* deck);
 
-
+void printlist(list_item* head);
 
 #endif

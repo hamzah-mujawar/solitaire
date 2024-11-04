@@ -2,4 +2,5 @@
 *.mk
 solitaire
 *.ccls
-build/*
+*.o
+.cache
