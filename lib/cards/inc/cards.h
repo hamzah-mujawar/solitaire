@@ -30,16 +30,18 @@ struct Card {
     enum Card_Names rank;
     enum Card_Categories suit;
 };
+typedef struct Card Card;
 
 struct Deck {
     struct Card cards[DECKSIZE]; // Array of cards
 };
+typedef struct Deck Deck;
 
-struct Deck createDeck();
+Deck createDeck();
 
-void shuffleDeck(struct Deck* deck);
+void shuffleDeck(Deck* deck);
 
-void printDeck(const struct Deck* deck);
+void printDeck(const Deck* deck);
 
 
 #endif 
