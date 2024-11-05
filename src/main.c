@@ -1,5 +1,5 @@
-#include "../lib/cards/inc/cards.h"
-#include "../lib/linked_list/inc/linked_list.h"
+#include "../include/deck.h"
+#include "../include/linked_list.h"
 int main()
 {
     struct Deck deck = createDeck();

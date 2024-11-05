@@ -1,4 +1,4 @@
-#include "../inc/cards.h"
+#include "../include/deck.h"
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>

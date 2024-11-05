@@ -1,6 +1,6 @@
 #ifndef __LINKED_LIST_H__
 #define __LINKED_LIST_H__
-#include "../../cards/inc/cards.h"
+#include "deck.h"
 
 struct list_item{
     Card card;
