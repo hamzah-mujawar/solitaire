@@ -7,5 +7,6 @@ int main()
     printDeck(&deck);
     list_item* l = create_list(&deck);
     printlist(l);
+    free_list(l);
     return 0;
 }

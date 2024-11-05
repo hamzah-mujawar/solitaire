@@ -5,12 +5,12 @@
 list_item* create_list(Deck* deck)
 {
     list l = { NULL };
-    list_item *prev = NULL;
+    list_item* prev = NULL;
     for (int i = 0; i < DECKSIZE; i++) {
         list_item* new = malloc(sizeof(list_item));
         new->card = deck->cards[i];
         new->next = NULL;
-        if(i == 0)
+        if (i == 0)
             l.head = new;
         else
             prev->next = new;
@@ -27,4 +27,14 @@ void printlist(list_item* head)
         temp = temp->next;
     }
     printf("\n");
+}
+
+void free_list(list_item* head)
+{
+    list_item* tmp;
+    while (head != NULL) {
+        tmp = head;
+        head = head->next;
+        free(tmp);
+    }
 }

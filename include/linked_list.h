@@ -17,4 +17,6 @@ list_item* create_list(Deck* deck);
 
 void printlist(list_item* head);
 
+void free_list(list_item* head);
+
 #endif
