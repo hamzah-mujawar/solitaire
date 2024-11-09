@@ -8,7 +8,7 @@ list_item* create_list(Deck* deck)
     list_item* prev = NULL;
     for (int i = 0; i < DECKSIZE; i++) {
         list_item* new = malloc(sizeof(list_item));
-        new->card = deck->cards[i];
+        new->card = deck->cards[i]; //cards[i] rank and suit
         new->next = NULL;
         if (i == 0)
             l.head = new;
