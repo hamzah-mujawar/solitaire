@@ -1,4 +1,6 @@
 # Solitaire TUI using Ncurses
+## Status: On hold
+This project is currently on the backburner, as I need to prepare for the upcoming GSoC.
 ## TODO:
 - [ ] Draw slots(borders) for game board components (BASE GAME LAYER).
 - [ ] Draw cards onto the slots
