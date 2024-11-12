@@ -4,6 +4,8 @@
 #include <stdio.h>
 
 #include "../include/common.h"
+
+const char *program_name = "solitaire";
 /*
  * The error_generic function that is used to handle any errors
  * that might occur due to malloc() not being able to allocate
