@@ -40,3 +40,12 @@ void win_free(WIN* win)
     delwin(win->window);
     free(win);
 }
+/*
+ * setter to set window x and y position and to move it using 
+ * mvwin() ncurses function.
+ */
+void win_set(WIN* win, int starty, int startx){
+    win->startx = startx;
+    win->starty = starty;
+    mvwin(win->window, startx, starty);
+}

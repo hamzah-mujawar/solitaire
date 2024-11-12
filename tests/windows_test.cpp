@@ -19,3 +19,21 @@ TEST(WinTests, InitWinValues){
 
     win_free(win);
 }
+
+TEST(WinTests, SetWinValues){
+    WIN *win;
+    
+    //test values where we move our window
+    int startx = 7;
+    int starty = 45;
+
+    win_malloc(&win);
+    win_init(win);
+    win_set(win, starty, startx);
+    
+    //if the set values are equal to the test values then test will pass
+    EXPECT_EQ(win->startx, startx);
+    EXPECT_EQ(win->starty, starty);
+
+    win_free(win);
+}
