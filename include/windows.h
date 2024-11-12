@@ -13,7 +13,7 @@
 */
 struct win_struct{
     int startx, starty;
-    WINDOW *win;
+    WINDOW *window;
 };
 typedef struct win_struct WIN;
 
